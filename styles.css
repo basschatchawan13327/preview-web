@@ -1,0 +1,395 @@
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #eeeeee;
+}
+
+header {
+    flex-direction: column;
+    width: 75%;
+    height: auto;
+}
+
+#logo-pic {
+    width: 500px;
+    height: auto;
+}
+
+/* NAVIGATION BAR */
+
+.navigate {
+    width: 100%;
+    border-top: 1px solid #dcdcdc;
+    font-family: 'Roboto', sans-serif;
+}
+
+.navigate ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigate ul li {
+    flex: 1;
+    position: relative;
+    text-align: center;
+    height: 70px;             
+}
+
+.navigate ul li:not(:first-child)::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 20%;
+    height: 60%;
+    width: 1px;
+    background-color: #d5d5d5;
+}
+
+.navigate ul li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: #333333a9;
+    font-weight: 400;
+    font-size: 16px;
+    transition: 0.25s;
+}
+
+/* HOVER EFFECT */
+
+.navigate ul li:hover {
+    background-color: #b82020;
+}
+
+.navigate ul li:hover a {
+    color: white;
+}
+
+/* BANNER */
+
+.banner {
+    background-color: grey;
+}
+
+#banner-pic {
+    margin-top: 0;       
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* SLOGAN */
+
+.slogan {
+    text-align: center;
+    font-size: 24px;
+    font-family: "Orbitron", sans-serif;
+    line-height: 1.4;
+    margin: 20px auto;
+    width: 75%;
+    border-bottom: 1px solid black;
+}
+
+/* PRODUCT GRID */
+
+.product-prop {
+    display: flex;
+    width: 75%;
+    gap: 20px;
+    border-bottom: 1px solid black;
+}
+
+.content {
+    width: 25%;
+}
+
+.pic-box {
+    height: 200px;
+    width: 100%;
+    overflow: hidden;
+    box-shadow: 10px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.prop-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: 0.3s;
+}
+
+.prop-img:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+}
+
+.prop-head {
+    margin-top: 10px;
+}
+
+.prop-descript {
+    margin-top: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* ----------- NEWS LAYOUT ----------- */
+
+.news-update {
+    display: flex;
+    width: 75%;
+    margin: 40px auto;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+/* LEFT SIDE (NEWS) */
+.left-box {
+    flex: 2;
+}
+
+#news-header {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.news-box {
+    margin-bottom: 40px;
+}
+
+.item-header {
+    display: block;
+    font-weight: bold;
+    color: #696767;
+    font-size: 18px;
+    margin-bottom: 7px;
+}
+
+.item-descript {
+    color: #333;
+    line-height: 1.5;
+    margin-bottom: 6px;
+}
+
+.date {
+    display: block;
+    text-align: right;
+    color: #b82020;
+    font-size: 14px;
+}
+
+/* RIGHT SIDE (SIDEBAR) */
+.right-box {
+    flex: 1;
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 4px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* HEADINGS */
+#poll-header,
+#competition-header {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 24px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+/* POLL SECTION */
+#poll-question {
+    display: block;
+    color: #b82020;
+    margin-bottom: 15px;
+}
+
+.poll form label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 12px;
+}
+
+/* COMPETITION SECTION */
+.competition-descript {
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+/* OUTER WRAPPER – full width, background */
+.bottom-box {
+    display: flex;
+    width: 100%;
+    border-top: 1px solid black;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottom-box-inner{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width: 75%;
+    height: auto;
+    gap: 200px;
+}
+.magazine{
+    margin-top: 10px;
+}
+
+.reviews-box{
+    color: #b82020;
+}
+
+.links-box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    color: #b82020;
+    gap: 5px;
+}
+.links-box a {
+    color: #b82020;
+}
+
+footer {
+    width: 100%;
+    background-color: #b40000;
+    padding: 25px 0;
+
+    display: flex;
+    justify-content: center;   /* จัด container ให้กลางหน้า */
+}
+
+.footer-inner {
+    width: 75%;                /* ความกว้างของเนื้อหา */
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;  /* ซ้าย–ขวา */
+    align-items: flex-start;
+}
+
+/* เนื้อหาฝั่งซ้าย */
+.footer-left {
+    text-align: left;
+    color: black;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+/* เนื้อหาฝั่งขวา */
+.footer-right {
+    text-align: right;
+    color: black;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.footer-right a {
+    color: black;
+    text-decoration: none;
+    margin: 0 4px;
+}
+
+.footer-right a:hover {
+    text-decoration: underline;
+}
+
+/* ============= RESPONSIVE ============= */
+
+/* จอแท็บเล็ตลงไป */
+@media (max-width: 992px) {
+
+    header, 
+    .slogan,
+    .product-prop,
+    .news-update,
+    .bottom-box-inner,
+    .footer-inner {
+        width: 90%;
+    }
+
+    /* product → ปรับให้ 2 คอลัมน์ */
+    .product-prop {
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .content {
+        width: 45%;
+    }
+
+    /* NEWS layout → ซ้อนกันแทนการวางซ้ายขวา */
+    .news-update {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .right-box {
+        width: 100%;
+    }
+
+    .bottom-box-inner {
+        gap: 80px;
+    }
+}
+
+/* จอมือถือ */
+@media (max-width: 600px) {
+
+    #logo-pic {
+        width: 300px;
+    }
+
+    /* Navigation → ให้เป็นก้อนเดียว */
+    .navigate ul {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .navigate ul li {
+        height: 55px;
+    }
+
+    .navigate ul li:not(:first-child)::before {
+        display: none; /* เอาเส้นแบ่งออกบนมือถือ */
+    }
+
+    /* Product → 1 คอลัมน์เต็ม */
+    .content {
+        width: 100%;
+    }
+
+    /* ลดขนาดรูปในกล่องล่าง */
+    .bottom-box-inner {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    /* Footer → เรียงบนลงล่าง */
+    .footer-inner {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .footer-left, .footer-right {
+        text-align: center;
+    }
+}
+
+
+
+
+
