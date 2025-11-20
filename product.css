@@ -1,0 +1,283 @@
+*{
+    border: 1px solid black;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #eeeeee;
+}
+
+header {
+    flex-direction: column;
+    width: 75%;
+    height: auto;
+}
+
+#logo-pic {
+    width: 262px;
+    height: auto;
+}
+
+/* NAVIGATION BAR */
+
+.navigate {
+    width: 100%;
+    border-top: 1px solid #dcdcdc;
+    font-family: 'Roboto', sans-serif;
+}
+
+.navigate ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigate ul li {
+    flex: 1;
+    position: relative;
+    text-align: center;
+    height: 70px;             
+}
+
+.navigate ul li:not(:first-child)::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 20%;
+    height: 60%;
+    width: 1px;
+    background-color: #d5d5d5;
+}
+
+.navigate ul li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: #333333a9;
+    font-weight: 400;
+    font-size: 16px;
+    transition: 0.25s;
+}
+
+/* HOVER EFFECT */
+
+.navigate ul li:hover {
+    background-color: #b82020;
+}
+
+.navigate ul li:hover a {
+    color: white;
+}
+
+/* Product box */
+/* ---------- PRODUCT GALLERY ---------- */
+
+.product-box {
+    width: 75%;
+    margin: 40px auto;
+    display: flex;
+    gap: 30px;
+}
+
+.thumb-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.pic-thumb {
+    width: 120px;
+    border: 2px solid red;
+    padding: 4px;
+    cursor: pointer;
+}
+
+.main-display {
+    flex: 3;
+}
+
+.main-img {
+    width: 600px;
+    border: 5px solid #ffffff;
+}
+
+/* ---------- PRODUCT CONSOLE ---------- */
+
+.console {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.prod-name {
+    font-size: 32px;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.price {
+    color: red;
+    font-size: 24px;
+}
+.dropdown-box {
+    margin-top: 10px;
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.size{
+    width: 50%;
+    height: 30px;
+}
+.quantity{
+    width: 50%;
+    height: 30px;
+}
+.buy-btn {
+    margin-top: 10px;
+    width: 100%;
+    height: 50px;
+    background-color: #b82020;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.near-store{
+    display: flex;
+    justify-content: flex-end;
+    color: grey;
+    text-decoration: none;
+    font-size: 16px;
+    margin-top: 10px;
+}
+.share-box{
+    display: flex;
+    justify-content: flex-end;
+    gap: 5px;
+    
+}
+.share-button{
+    height: 0px;
+}
+#share-head{
+    margin-top: 0px;
+    color: grey;
+    font-size: 16px;
+}
+
+/* Similar Product */
+
+.similar-box{
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    width: 75%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.similar-head{
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+.similar-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap : 10px;
+    width: 100%;
+}
+
+/* Bottom box */
+
+.bottom-box {
+    display: flex;
+    width: 100%;
+    border-top: 1px solid black;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottom-box-inner{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width: 75%;
+    height: auto;
+    gap: 200px;
+}
+.magazine{
+    margin-top: 10px;
+}
+
+.reviews-box{
+    color: #b82020;
+}
+
+.links-box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    color: #b82020;
+    gap: 5px;
+}
+.links-box a {
+    color: #b82020;
+}
+
+footer {
+    width: 100%;
+    background-color: #b40000;
+    padding: 25px 0;
+
+    display: flex;
+    justify-content: center;   /* จัด container ให้กลางหน้า */
+}
+
+.footer-inner {
+    width: 75%;                /* ความกว้างของเนื้อหา */
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;  /* ซ้าย–ขวา */
+    align-items: flex-start;
+}
+
+/* เนื้อหาฝั่งซ้าย */
+.footer-left {
+    text-align: left;
+    color: black;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+/* เนื้อหาฝั่งขวา */
+.footer-right {
+    text-align: right;
+    color: black;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.footer-right a {
+    color: black;
+    text-decoration: none;
+    margin: 0 4px;
+}
+
+.footer-right a:hover {
+    text-decoration: underline;
+}
